@@ -1,0 +1,174 @@
+{
+  "pad_count": 12,
+  "all_pads": {
+    "pad0": {
+      "rect": {
+        "xmin": 620,
+        "xmax": 639,
+        "ymin": 547,
+        "ymax": 614
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad1": {
+      "rect": {
+        "xmin": 649,
+        "xmax": 669,
+        "ymin": 547,
+        "ymax": 614
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad2": {
+      "rect": {
+        "xmin": 305,
+        "xmax": 324,
+        "ymin": 330,
+        "ymax": 397
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad3": {
+      "rect": {
+        "xmin": 334,
+        "xmax": 354,
+        "ymin": 330,
+        "ymax": 397
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad4": {
+      "rect": {
+        "xmin": 408,
+        "xmax": 447,
+        "ymin": 435,
+        "ymax": 446
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad5": {
+      "rect": {
+        "xmin": 408,
+        "xmax": 447,
+        "ymin": 460,
+        "ymax": 471
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad6": {
+      "rect": {
+        "xmin": 408,
+        "xmax": 447,
+        "ymin": 485,
+        "ymax": 496
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad7": {
+      "rect": {
+        "xmin": 408,
+        "xmax": 447,
+        "ymin": 510,
+        "ymax": 521
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad8": {
+      "rect": {
+        "xmin": 506,
+        "xmax": 544,
+        "ymin": 510,
+        "ymax": 521
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad9": {
+      "rect": {
+        "xmin": 506,
+        "xmax": 544,
+        "ymin": 485,
+        "ymax": 496
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad10": {
+      "rect": {
+        "xmin": 506,
+        "xmax": 544,
+        "ymin": 460,
+        "ymax": 471
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad11": {
+      "rect": {
+        "xmin": 506,
+        "xmax": 544,
+        "ymin": 435,
+        "ymax": 446
+      },
+      "layers": [
+        1
+      ]
+    }
+  },
+  "connections": {
+    "\"Net-(U1-~{RST})\"": {
+      "pads": [
+        "pad0",
+        "pad7"
+      ],
+      "width": 1
+    },
+    "\"Net-(U1-DISCH)\"": {
+      "pads": [
+        "pad1",
+        "pad10"
+      ],
+      "width": 1
+    },
+    "\"Net-(U1-OUT)\"": {
+      "pads": [
+        "pad2",
+        "pad6"
+      ],
+      "width": 1
+    },
+    "\"Net-(U1-GND)\"": {
+      "pads": [
+        "pad3",
+        "pad4",
+        "pad5"
+      ],
+      "width": 1
+    }
+  },
+  "board": {
+    "board_x_min": 276,
+    "board_x_max": 827,
+    "board_y_min": 285,
+    "board_y_max": 728
+  }
+}

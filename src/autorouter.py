@@ -1,3 +1,4 @@
+import argparse
 import contextlib
 import io
 import json
@@ -9,8 +10,8 @@ import re
 import traceback
 
 
-def setup():
-    with open('examples/projtest3.json') as file:
+def setup(to_route_json, settings_json):
+    with open(to_route_json) as file:
     # with open('examples/example_to_route_2.json') as file:
         data = json.load(file)
 
@@ -26,7 +27,7 @@ def setup():
     connections = data["connections"]
     board = data["board"]
 
-    with open('settings/settings.json') as file:
+    with open(settings_json) as file:
         settings = json.load(file)
 
     margin = settings["min_spacing"]
@@ -765,7 +766,7 @@ def plot_board_2layer(board, all_pads, copper_by_layer, via_cells_all):
     plt.show()
 
 
-def main():
+def main_autorouter(to_route_json, routed_results_json, settings_json, log_txt):
     """Execute routing flow, print chekcs, visualize, and write log report."""
     report_lines = []
 
@@ -780,7 +781,7 @@ def main():
             pad_to_via_margin,
             board_margin,
             seed,
-        ) = setup()
+        ) = setup(to_route_json, settings_json)
 
         if seed is not None:
             random.seed(seed)
@@ -896,17 +897,41 @@ def main():
 
             plot_board_2layer(board, all_pads, copper_by_layer, via_cell_all)
 
-            with open("routed_results.json", "w") as file:
+            with open(routed_results_json, "w") as file:
                 json.dump(paths, file)
 
     except Exception as exec:
         report_lines.append("Routed result: FAILED")
         report_lines.append(f"Error: {exec}")
-        write_log_report(report_lines)
+        write_log_report(report_lines, log_txt)
         traceback.print_exc()
         raise
 
-    write_log_report(report_lines)
+    write_log_report(report_lines, log_txt)
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Example program"
+    )
+    parser.add_argument("--to_route_json", default="examples/example_to_route_1.json")
+    parser.add_argument("--routed_results_json", default="examples/routed_results.json")
+    parser.add_argument("--settings_json", default="settings/settings_example.json")
+    parser.add_argument("--log_txt", default="temp/example_to_route_1_log.txt")
+    return parser.parse_args()
+
+
+def main():
+    args = parse_args()
+    to_route_json = args.to_route_json
+    routed_results_json = args.routed_results_json
+    settings_json = args.settings_json
+    log_txt = args.log_txt
+
+    print(f"Input file is: {to_route_json}")
+    print(f"Output file is: {routed_results_json}")
+    print(f"Settings file is: {settings_json}")
+    main_autorouter(to_route_json, routed_results_json, settings_json, log_txt)
 
 
 if __name__ == "__main__":
