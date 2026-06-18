@@ -1,0 +1,89 @@
+{
+  "pad_count": 6,
+  "all_pads": {
+    "pad0": {
+      "rect": {
+        "xmin": 166,
+        "xmax": 177,
+        "ymin": 214,
+        "ymax": 248
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad1": {
+      "rect": {
+        "xmin": 208,
+        "xmax": 219,
+        "ymin": 214,
+        "ymax": 248
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad2": {
+      "rect": {
+        "xmin": 165,
+        "xmax": 176,
+        "ymin": 150,
+        "ymax": 183
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad3": {
+      "rect": {
+        "xmin": 207,
+        "xmax": 218,
+        "ymin": 150,
+        "ymax": 183
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad4": {
+      "rect": {
+        "xmin": 183,
+        "xmax": 199,
+        "ymin": 297,
+        "ymax": 312
+      },
+      "layers": [
+        1,
+        2
+      ]
+    },
+    "pad5": {
+      "rect": {
+        "xmin": 333,
+        "xmax": 349,
+        "ymin": 297,
+        "ymax": 312
+      },
+      "layers": [
+        1,
+        2
+      ]
+    }
+  },
+  "connections": {
+    "\"Net-(R1-Pad2)\"": {
+      "pads": [
+        "pad1",
+        "pad3",
+        "pad5"
+      ],
+      "width": 1
+    }
+  },
+  "board": {
+    "board_x_min": 138,
+    "board_x_max": 394,
+    "board_y_min": 126,
+    "board_y_max": 354
+  }
+}

@@ -1,0 +1,143 @@
+{
+    "pad1": {
+        "rect": {
+            "xmin": 2,
+            "xmax": 3,
+            "ymin": 2,
+            "ymax": 3
+        },
+        "layers": [
+            1
+        ]
+    },
+    "pad2": {
+        "rect": {
+            "xmin": 2,
+            "xmax": 3,
+            "ymin": 5,
+            "ymax": 6
+        },
+        "layers": [
+            1
+        ]
+    },
+    "pad3": {
+        "rect": {
+            "xmin": 2,
+            "xmax": 3,
+            "ymin": 8,
+            "ymax": 9
+        },
+        "layers": [
+            1
+        ]
+    },
+    "pad4": {
+        "rect": {
+            "xmin": 2,
+            "xmax": 3,
+            "ymin": 11,
+            "ymax": 12
+        },
+        "layers": [
+            1
+        ]
+    },
+    "pad5": {
+        "rect": {
+            "xmin": 71,
+            "xmax": 72,
+            "ymin": 72,
+            "ymax": 73
+        },
+        "layers": [
+            1
+        ]
+    },
+    "pad6": {
+        "rect": {
+            "xmin": 7,
+            "xmax": 8,
+            "ymin": 5,
+            "ymax": 6
+        },
+        "layers": [
+            1
+        ]
+    },
+    "pad7": {
+        "rect": {
+            "xmin": 7,
+            "xmax": 8,
+            "ymin": 8,
+            "ymax": 9
+        },
+        "layers": [
+            1
+        ]
+    },
+    "pad8": {
+        "rect": {
+            "xmin": 7,
+            "xmax": 8,
+            "ymin": 11,
+            "ymax": 12
+        },
+        "layers": [
+            1,
+            2
+        ]
+    },
+    "all_pads": {
+        "pad1": "pad1",
+        "pad2": "pad2",
+        "pad3": "pad3",
+        "pad4": "pad4",
+        "pad5": "pad5",
+        "pad6": "pad6",
+        "pad7": "pad7",
+        "pad8": "pad8"
+    },
+    "connections": {
+        "con1": {
+            "pads": [
+                "pad1",
+                "pad5"
+            ],
+            "width": 1
+        },
+        "con2": {
+            "pads": [
+                "pad2",
+                "pad7"
+            ],
+            "width": 1
+        },
+        "con3": {
+            "pads": [
+                "pad3",
+                "pad6"
+            ],
+            "width": 1
+        },
+        "con4": {
+            "pads": [
+                "pad4",
+                "pad8"
+            ],
+            "width": 1
+        }
+    },
+    "margin": 1,
+    "via": 2,
+    "via_margin": 1,
+    "pad_to_via_margin": 1,
+    "board_margin": 1,
+    "seed_env": 42,
+    "board": {
+        "board_x_min": 0,
+        "board_x_max": 80,
+        "board_y_min": 0,
+        "board_y_max": 80
+    }
+}

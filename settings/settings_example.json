@@ -1,0 +1,10 @@
+{
+    "min_wire_width": 2,
+    "min_spacing": 2,
+    "via": 2,
+    "via_margin": 2,
+    "pad_to_via_margin": 2,
+    "board_margin": 2,
+    "seed_env": 42,
+    "info": "The unit is in MIL millinch = 0.0254 mm"
+}

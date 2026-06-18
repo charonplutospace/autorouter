@@ -1,0 +1,114 @@
+{
+  "all_pads": {
+    "pad0": {
+      "rect": {
+        "xmin": 10,
+        "xmax": 15,
+        "ymin": 10,
+        "ymax": 15
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad1": {
+      "rect": {
+        "xmin": 20,
+        "xmax": 25,
+        "ymin": 10,
+        "ymax": 15
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad2": {
+      "rect": {
+        "xmin": 30,
+        "xmax": 35,
+        "ymin": 10,
+        "ymax": 15
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad3": {
+      "rect": {
+        "xmin": 10,
+        "xmax": 15,
+        "ymin": 20,
+        "ymax": 25
+      },
+      "layers": [
+        1
+      ]
+    },
+    "pad4": {
+      "rect": {
+        "xmin": 20,
+        "xmax": 25,
+        "ymin": 20,
+        "ymax": 25
+      },
+      "layers": [
+        1,
+        2
+      ]
+    },
+    "pad5": {
+      "rect": {
+        "xmin": 30,
+        "xmax": 35,
+        "ymin": 20,
+        "ymax": 25
+      },
+      "layers": [
+        1,
+        2
+      ]
+    },
+    "pad6": {
+      "rect": {
+        "xmin": 10,
+        "xmax": 15,
+        "ymin": 30,
+        "ymax": 35
+      },
+      "layers": [
+        1,
+        2
+      ]
+    }
+  },
+    "connections": {
+        "con0": {
+            "pads": [
+                "pad1",
+                "pad5",
+                "pad6"
+            ],
+            "width": 1
+        },
+        "con1": {
+            "pads": [
+                "pad2",
+                "pad3",
+                "pad4"
+            ],
+            "width": 1
+        }
+    },
+    "margin": 1,
+    "via": 2,
+    "via_margin": 1,
+    "pad_to_via_margin": 1,
+    "board_margin": 1,
+    "seed_env": 42,
+    "board": {
+        "board_x_min": 0,
+        "board_x_max": 45,
+        "board_y_min": 0,
+        "board_y_max": 45
+    }
+}
