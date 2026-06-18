@@ -1,0 +1,14 @@
+Deterministic seed: 42
+Routing result: SUCCESS
+Nets: con1, con2, con3, con4
+Total vias: 0
+con1 path_1: L1=80 cells, L2=0 cells, vias=[]
+con2 path_1: L1=12 cells, L2=0 cells, vias=[]
+con3 path_1: L1=4 cells, L2=0 cells, vias=[]
+con4 path_1: L1=4 cells, L2=0 cells, vias=[]
+Layer clearance check: PASS
+Via clearance check: PASS
+Pad-to_via clearance check: PASS
+Board margin check: PASS
+Foregin-pad overlap check: PASS
+Pad-layer violation check: PASS
